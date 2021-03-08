@@ -314,9 +314,11 @@ def bonusb(filename):
     
     # confusion matrix for evaluating the performance of the trained model
     cm1 = confusion_matrix(test_y, test_predictions)
+    print("Confusion matrix for test set")
     print(cm1)
     
     cm2 = confusion_matrix(train_y, train_predictions)
+    print("Confusion matrix for train set")
     print(cm2)
     
-    pass
+    return cm1, cm2

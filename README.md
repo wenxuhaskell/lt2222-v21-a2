@@ -20,7 +20,7 @@ Part 3 - Create the table and splitting
 
 I removed all occurances of '$' and '&' as they contribute nothing to the context analysis. Then I created TF-IDF as the features table. Splitting of data set is implemented as required.
 
-Note: Sometimes the code "test_y[0]" in notebook file throws an exception due to that there exists no such a record with index as 0 in test_y which is randomly selected from the data set. But test_y seems to contain valid data and the program would be able to continue to run the following tasks.
+Note: Sometimes the code "test_y[0]" in notebook file throws an exception due to unknown reason. But test_y seems to contain valid data and the program would be able to continue to run the following tasks.
 
 Part 4 - Training the model
 
@@ -33,4 +33,4 @@ I noticed that the type 'geo' which is the most frequent NE type in the train se
 
 Bonus B - Expanding the feature space
 
-When adding the context (five terms before and after the NE), I also include the POS of the term as part of the feature. After padding, the size of feature vector becomes doubled. With the expanded features space, the trained model leads to better accuracy when verifying with the test set.
+When adding the context (five terms before and after the NE), I also include the POS of the term as part of the feature. After padding, the length of feature vector becomes doubled. With the expanded features space, the trained model leads to improved accuracy for classification of most NE types when verifying with the test set.
