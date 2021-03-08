@@ -19,7 +19,8 @@ I created Instance objects as required. In particular i used '$'(or '&') as the 
 Part 3 - Create the table and splitting
 
 I removed all occurances of '$' and '&' as they contribute nothing to the context analysis. Then I created TF-IDF as the features table. Splitting of data set is implemented as required.
-Sometimes test_y[0] seems to throw an exception for some unknown reason. But test_y seems to contain valid data and the program would be able to continue to run the following tasks.
+
+Note: Sometimes the code "test_y[0]" in notebook file throws an exception due to that there exists no such a record with index as 0 in test_y which is randomly selected from the data set. But test_y seems to contain valid data and the program would be able to continue to run the following tasks.
 
 Part 4 - Training the model
 
